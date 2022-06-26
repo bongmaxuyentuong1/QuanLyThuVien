@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2160D32-C5DE-4F4B-ABA2-EE8940D77865}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL_BANGIAO.cs" />
+    <Compile Include="BLL\BLL_DOCGIA.cs" />
+    <Compile Include="BLL\BLL_ID.cs" />
+    <Compile Include="BLL\BLL_NGUOIDUNG.cs" />
+    <Compile Include="BLL\BLL_NHAPSACH.cs" />
+    <Compile Include="BLL\BLL_PHANQUYEN.cs" />
+    <Compile Include="BLL\BLL_PHIEUMUON.cs" />
+    <Compile Include="BLL\BLL_SACH.cs" />
+    <Compile Include="DTO\BANGIAO_VIEW.cs" />
+    <Compile Include="DTO\BANGIAO_VIEW_CHITIET.cs" />
+    <Compile Include="DTO\BANGIAO_VIEW_SOLUONG.cs" />
+    <Compile Include="DTO\CBB_ITEM.cs" />
+    <Compile Include="DTO\DOCGIA_VIEW_GIANGVIEN.cs" />
+    <Compile Include="DTO\DOCGIA_VIEW_SINHVIEN.cs" />
+    <Compile Include="DTO\DOCGIA_VIPHAM.cs" />
+    <Compile Include="DTO\NGUOIDUNG_VIEW.cs" />
+    <Compile Include="DTO\NHAPSACH_CHITIET.cs" />
+    <Compile Include="DTO\NHAPSACH_VIEW.cs" />
+    <Compile Include="DTO\NHAPSACH_VIEW_SOLUONG.cs" />
+    <Compile Include="DTO\PM_CHITIET.cs" />
+    <Compile Include="DTO\PM_VIEW.cs" />
+    <Compile Include="DTO\PM_VIEW_SOLUONG.cs" />
+    <Compile Include="DTO\SACH_VIEW.cs" />
+    <Compile Include="DTO\SOLUONG_VIEW.cs" />
+    <Compile Include="Entity\BANGIAO.cs" />
+    <Compile Include="Entity\CHITIETBANGIAO.cs" />
+    <Compile Include="Entity\CHITIETNHAPSACH.cs" />
+    <Compile Include="Entity\CHITIETPHIEUMUON.cs" />
+    <Compile Include="Entity\CreateDB.cs" />
+    <Compile Include="Entity\CreateDBWhenChange.cs" />
+    <Compile Include="Entity\DOCGIA.cs" />
+    <Compile Include="Entity\GIANGVIEN.cs" />
+    <Compile Include="Entity\KHOA.cs" />
+    <Compile Include="Entity\LOPSH.cs" />
+    <Compile Include="Entity\NGONNGU.cs" />
+    <Compile Include="Entity\NGUOIDUNG.cs" />
+    <Compile Include="Entity\NHAPSACH.cs" />
+    <Compile Include="Entity\NXB.cs" />
+    <Compile Include="Entity\NHIEMVU.cs" />
+    <Compile Include="Entity\PHIEUMUON.cs" />
+    <Compile Include="Entity\SACH.cs" />
+    <Compile Include="Entity\SINHVIEN.cs" />
+    <Compile Include="Entity\THELOAI.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entity\QuanLyThuVienEntities.cs" />
+    <Compile Include="VIEW\Bangiao_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Danhsach.Designer.cs">
+      <DependentUpon>Bangiao_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Danhsachchuaxacnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Danhsachchuaxacnhan.Designer.cs">
+      <DependentUpon>Bangiao_Danhsachchuaxacnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Sua.Designer.cs">
+      <DependentUpon>Bangiao_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Them.Designer.cs">
+      <DependentUpon>Bangiao_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Tim.Designer.cs">
+      <DependentUpon>Bangiao_Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Xacnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Bangiao_Xacnhan.Designer.cs">
+      <DependentUpon>Bangiao_Xacnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\CN_Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\CN_Dangnhap.Designer.cs">
+      <DependentUpon>CN_Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\CN_Doipass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\CN_Doipass.Designer.cs">
+      <DependentUpon>CN_Doipass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\CN_Thongbao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\CN_Thongbao.Designer.cs">
+      <DependentUpon>CN_Thongbao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Docgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Docgia.Designer.cs">
+      <DependentUpon>Docgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Danhsach.Designer.cs">
+      <DependentUpon>Docgia_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Sua.Designer.cs">
+      <DependentUpon>Docgia_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Them.Designer.cs">
+      <DependentUpon>Docgia_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Docgia_Tim.Designer.cs">
+      <DependentUpon>Docgia_Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Form_Thuthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Form_Thuthu.Designer.cs">
+      <DependentUpon>Form_Thuthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Ngonngu_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Ngonngu_Them.Designer.cs">
+      <DependentUpon>Ngonngu_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Danhsach.Designer.cs">
+      <DependentUpon>Nhapsach_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Sua.Designer.cs">
+      <DependentUpon>Nhapsach_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Them.Designer.cs">
+      <DependentUpon>Nhapsach_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Nhapsach_Tim.Designer.cs">
+      <DependentUpon>Nhapsach_Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\NXB_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\NXB_Them.Designer.cs">
+      <DependentUpon>NXB_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PM_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PM_Danhsach.Designer.cs">
+      <DependentUpon>PM_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PM_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PM_Sua.Designer.cs">
+      <DependentUpon>PM_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PM_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PM_Them.Designer.cs">
+      <DependentUpon>PM_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\PM_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\PM_Tim.Designer.cs">
+      <DependentUpon>PM_Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Sach.Designer.cs">
+      <DependentUpon>Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Sach_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Sach_Danhsach.Designer.cs">
+      <DependentUpon>Sach_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Sach_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Sach_Sua.Designer.cs">
+      <DependentUpon>Sach_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Sach_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Sach_Them.Designer.cs">
+      <DependentUpon>Sach_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Sach_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Sach_Tim.Designer.cs">
+      <DependentUpon>Sach_Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Theloai_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Theloai_Them.Designer.cs">
+      <DependentUpon>Theloai_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Docgiamuonnhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Docgiamuonnhieu.Designer.cs">
+      <DependentUpon>Thongke_Docgiamuonnhieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Docgiavipham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Docgiavipham.Designer.cs">
+      <DependentUpon>Thongke_Docgiavipham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Sachhet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Sachhet.Designer.cs">
+      <DependentUpon>Thongke_Sachhet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Sachmuonnhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Thongke_Sachmuonnhieu.Designer.cs">
+      <DependentUpon>Thongke_Sachmuonnhieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\User_Danhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\User_Danhsach.Designer.cs">
+      <DependentUpon>User_Danhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\User_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\User_Sua.Designer.cs">
+      <DependentUpon>User_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\User_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\User_Them.Designer.cs">
+      <DependentUpon>User_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\User_Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\User_Tim.Designer.cs">
+      <DependentUpon>User_Tim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VIEW\Bangiao_Danhsach.resx">
+      <DependentUpon>Bangiao_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Bangiao_Danhsachchuaxacnhan.resx">
+      <DependentUpon>Bangiao_Danhsachchuaxacnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Bangiao_Sua.resx">
+      <DependentUpon>Bangiao_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Bangiao_Them.resx">
+      <DependentUpon>Bangiao_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Bangiao_Tim.resx">
+      <DependentUpon>Bangiao_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Bangiao_Xacnhan.resx">
+      <DependentUpon>Bangiao_Xacnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\CN_Dangnhap.resx">
+      <DependentUpon>CN_Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\CN_Doipass.resx">
+      <DependentUpon>CN_Doipass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\CN_Thongbao.resx">
+      <DependentUpon>CN_Thongbao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Docgia.resx">
+      <DependentUpon>Docgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Docgia_Danhsach.resx">
+      <DependentUpon>Docgia_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Docgia_Sua.resx">
+      <DependentUpon>Docgia_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Docgia_Them.resx">
+      <DependentUpon>Docgia_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Docgia_Tim.resx">
+      <DependentUpon>Docgia_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Form_Thuthu.resx">
+      <DependentUpon>Form_Thuthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Ngonngu_Them.resx">
+      <DependentUpon>Ngonngu_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Nhapsach_Danhsach.resx">
+      <DependentUpon>Nhapsach_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Nhapsach_Sua.resx">
+      <DependentUpon>Nhapsach_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Nhapsach_Them.resx">
+      <DependentUpon>Nhapsach_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Nhapsach_Tim.resx">
+      <DependentUpon>Nhapsach_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\NXB_Them.resx">
+      <DependentUpon>NXB_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PM_Danhsach.resx">
+      <DependentUpon>PM_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PM_Sua.resx">
+      <DependentUpon>PM_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PM_Them.resx">
+      <DependentUpon>PM_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\PM_Tim.resx">
+      <DependentUpon>PM_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Sach.resx">
+      <DependentUpon>Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Sach_Danhsach.resx">
+      <DependentUpon>Sach_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Sach_Sua.resx">
+      <DependentUpon>Sach_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Sach_Them.resx">
+      <DependentUpon>Sach_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Sach_Tim.resx">
+      <DependentUpon>Sach_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Theloai_Them.resx">
+      <DependentUpon>Theloai_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Thongke_Docgiamuonnhieu.resx">
+      <DependentUpon>Thongke_Docgiamuonnhieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Thongke_Docgiavipham.resx">
+      <DependentUpon>Thongke_Docgiavipham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Thongke_Sachhet.resx">
+      <DependentUpon>Thongke_Sachhet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Thongke_Sachmuonnhieu.resx">
+      <DependentUpon>Thongke_Sachmuonnhieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\User_Danhsach.resx">
+      <DependentUpon>User_Danhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\User_Sua.resx">
+      <DependentUpon>User_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\User_Them.resx">
+      <DependentUpon>User_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\User_Tim.resx">
+      <DependentUpon>User_Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -14,7 +14,7 @@ namespace QuanLyThuVien.DTO
         public string Ma_Phieu { get; set; }
         public string Ma_Sach { get; set; }
         public DateTime Ngay_Muon { get; set; }
-        public string Tra { get; set; }
+        public DateTime Ngay_Tra { get; set; }
         public string Noi_Dung_Vi_Pham { get; set; }
     }
 }

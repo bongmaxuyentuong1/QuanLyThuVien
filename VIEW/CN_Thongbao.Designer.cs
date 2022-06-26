@@ -79,7 +79,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 92);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 92);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +89,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lbThongbao);
-            this.panel1.Location = new System.Drawing.Point(124, 92);
+            this.panel1.Location = new System.Drawing.Point(93, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(510, 113);
             this.panel1.TabIndex = 63;

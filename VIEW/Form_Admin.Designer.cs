@@ -79,7 +79,6 @@
             this.toolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêĐộcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêĐộcGiảViPhạmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel16 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -314,8 +313,7 @@
             this.toolStripMenuItem12,
             this.nhậpSáchToolStripMenuItem,
             this.bànGiaoToolStripMenuItem,
-            this.toolStripMenuItem16,
-            this.toolStripMenuItem20});
+            this.toolStripMenuItem16});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1504, 28);
@@ -580,13 +578,6 @@
             this.thốngKêĐộcGiảViPhạmToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
             this.thốngKêĐộcGiảViPhạmToolStripMenuItem.Text = "Độc giả vi phạm";
             this.thốngKêĐộcGiảViPhạmToolStripMenuItem.Click += new System.EventHandler(this.thốngKêĐộcGiảViPhạmToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem20
-            // 
-            this.toolStripMenuItem20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(78, 24);
-            this.toolStripMenuItem20.Text = "Trợ giúp";
             // 
             // panel16
             // 
@@ -1324,7 +1315,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem19;
         private System.Windows.Forms.ToolStripMenuItem thốngKêĐộcGiảToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêĐộcGiảViPhạmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem20;
         private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox1;

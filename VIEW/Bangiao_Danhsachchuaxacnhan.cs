@@ -60,6 +60,7 @@ namespace QuanLyThuVien.VIEW
             {
                 string mabangiao = dataGridView1.SelectedRows[0].Cells["MABANGIAO"].Value.ToString();
                 Bangiao_Xacnhan bangiao_Xacnhan = new Bangiao_Xacnhan(this.manguoidung, mabangiao);
+                bangiao_Xacnhan.d = new Bangiao_Xacnhan.Mydel(GUI);
                 bangiao_Xacnhan.Show();
             }
             else

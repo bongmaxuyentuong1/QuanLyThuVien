@@ -236,9 +236,9 @@
             this.btnThem.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(840, 167);
+            this.btnThem.Location = new System.Drawing.Point(835, 160);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(165, 49);
+            this.btnThem.Size = new System.Drawing.Size(170, 56);
             this.btnThem.TabIndex = 63;
             this.btnThem.Text = "Tìm kiếm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,11 +284,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(35, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 24);
+            this.label5.Size = new System.Drawing.Size(206, 28);
             this.label5.TabIndex = 44;
             this.label5.Text = "Tiêu chí tìm kiếm";
             // 

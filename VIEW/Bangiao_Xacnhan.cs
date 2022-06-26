@@ -16,6 +16,8 @@ namespace QuanLyThuVien.VIEW
     {
         private string manguoidung;
         private string mabangiao;
+        public delegate void Mydel();
+        public Mydel d;
         public Bangiao_Xacnhan(string manguoidung, string mabangiao)
         {
             this.manguoidung = manguoidung;
@@ -60,6 +62,7 @@ namespace QuanLyThuVien.VIEW
             //MessageBox.Show("Chap nhan");
             CN_Thongbao f = new CN_Thongbao();
             f.setNotice("Chấp nhận!");
+            d();
             this.Close();
         }
     }

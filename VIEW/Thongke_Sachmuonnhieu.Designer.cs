@@ -59,11 +59,11 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(444, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(314, 39);
+            this.label4.Size = new System.Drawing.Size(399, 41);
             this.label4.TabIndex = 28;
             this.label4.Text = "Sách được mượn nhiều";
             // 

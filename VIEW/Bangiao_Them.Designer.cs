@@ -59,11 +59,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(48, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 24);
+            this.label1.Size = new System.Drawing.Size(179, 28);
             this.label1.TabIndex = 98;
             this.label1.Text = "Thêm bàn giao ";
             // 
@@ -102,12 +102,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(508, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(534, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(701, 413);
+            this.dataGridView1.Size = new System.Drawing.Size(681, 373);
             this.dataGridView1.TabIndex = 110;
             // 
             // btnXacNhan
@@ -185,10 +185,10 @@
             // txtSoLuong
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtSoLuong.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(309, 354);
+            this.txtSoLuong.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(252, 354);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(163, 32);
+            this.txtSoLuong.Size = new System.Drawing.Size(193, 31);
             this.txtSoLuong.TabIndex = 102;
             // 
             // panel10
@@ -203,10 +203,10 @@
             // txtMaSach
             // 
             this.txtMaSach.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtMaSach.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSach.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSach.Location = new System.Drawing.Point(41, 354);
             this.txtMaSach.Name = "txtMaSach";
-            this.txtMaSach.Size = new System.Drawing.Size(174, 32);
+            this.txtMaSach.Size = new System.Drawing.Size(174, 31);
             this.txtMaSach.TabIndex = 101;
             // 
             // label3
@@ -225,7 +225,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(305, 320);
+            this.label8.Location = new System.Drawing.Point(248, 320);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 24);
             this.label8.TabIndex = 100;
@@ -235,10 +235,10 @@
             // 
             this.lbMaNguoiBanGiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbMaNguoiBanGiao.AutoSize = true;
-            this.lbMaNguoiBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaNguoiBanGiao.Location = new System.Drawing.Point(305, 93);
+            this.lbMaNguoiBanGiao.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaNguoiBanGiao.Location = new System.Drawing.Point(248, 93);
             this.lbMaNguoiBanGiao.Name = "lbMaNguoiBanGiao";
-            this.lbMaNguoiBanGiao.Size = new System.Drawing.Size(177, 24);
+            this.lbMaNguoiBanGiao.Size = new System.Drawing.Size(197, 23);
             this.lbMaNguoiBanGiao.TabIndex = 94;
             this.lbMaNguoiBanGiao.Text = "Mã người bàn giao";
             // 
@@ -268,10 +268,10 @@
             // 
             this.lbNgayBanGiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbNgayBanGiao.AutoSize = true;
-            this.lbNgayBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayBanGiao.Location = new System.Drawing.Point(305, 250);
+            this.lbNgayBanGiao.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayBanGiao.Location = new System.Drawing.Point(248, 250);
             this.lbNgayBanGiao.Name = "lbNgayBanGiao";
-            this.lbNgayBanGiao.Size = new System.Drawing.Size(177, 24);
+            this.lbNgayBanGiao.Size = new System.Drawing.Size(197, 23);
             this.lbNgayBanGiao.TabIndex = 98;
             this.lbNgayBanGiao.Text = "Mã người bàn giao";
             // 
@@ -279,10 +279,10 @@
             // 
             this.lbMaBanGiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbMaBanGiao.AutoSize = true;
-            this.lbMaBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaBanGiao.Location = new System.Drawing.Point(305, 175);
+            this.lbMaBanGiao.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaBanGiao.Location = new System.Drawing.Point(248, 175);
             this.lbMaBanGiao.Name = "lbMaBanGiao";
-            this.lbMaBanGiao.Size = new System.Drawing.Size(177, 24);
+            this.lbMaBanGiao.Size = new System.Drawing.Size(197, 23);
             this.lbMaBanGiao.TabIndex = 96;
             this.lbMaBanGiao.Text = "Mã người bàn giao";
             // 

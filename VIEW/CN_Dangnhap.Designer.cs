@@ -151,12 +151,12 @@
             // txtMatKhau
             // 
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Constantia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Font = new System.Drawing.Font("Consolas", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Gray;
             this.txtMatKhau.Location = new System.Drawing.Point(226, 486);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(517, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(517, 26);
             this.txtMatKhau.TabIndex = 13;
             this.txtMatKhau.Text = "Nhập vào mật khẩu";
             this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
@@ -166,12 +166,12 @@
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Constantia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Consolas", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.ForeColor = System.Drawing.Color.Gray;
             this.txtTenDangNhap.Location = new System.Drawing.Point(230, 417);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(517, 27);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(517, 26);
             this.txtTenDangNhap.TabIndex = 12;
             this.txtTenDangNhap.Text = "Nhập vào tên đăng nhập";
             this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);

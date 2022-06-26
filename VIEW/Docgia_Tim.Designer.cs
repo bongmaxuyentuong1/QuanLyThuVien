@@ -158,11 +158,11 @@
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label14.Location = new System.Drawing.Point(423, 8);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(134, 20);
+            this.label14.Size = new System.Drawing.Size(161, 24);
             this.label14.TabIndex = 8;
             this.label14.Text = "Kết quả tìm kiếm";
             // 
@@ -179,11 +179,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label13.Location = new System.Drawing.Point(28, 2);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 21);
+            this.label13.Size = new System.Drawing.Size(206, 28);
             this.label13.TabIndex = 24;
             this.label13.Text = "Tiêu chí tìm kiếm";
             // 
@@ -212,12 +212,12 @@
             // btnHienThi
             // 
             this.btnHienThi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHienThi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHienThi.Image = ((System.Drawing.Image)(resources.GetObject("btnHienThi.Image")));
             this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHienThi.Location = new System.Drawing.Point(348, 190);
+            this.btnHienThi.Location = new System.Drawing.Point(327, 190);
             this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(120, 39);
+            this.btnHienThi.Size = new System.Drawing.Size(141, 39);
             this.btnHienThi.TabIndex = 100;
             this.btnHienThi.Text = "Hiển Thị";
             this.btnHienThi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -226,12 +226,12 @@
             // 
             // btn_Tim
             // 
-            this.btn_Tim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F);
+            this.btn_Tim.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Tim.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tim.Image")));
             this.btn_Tim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Tim.Location = new System.Drawing.Point(79, 190);
             this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(121, 40);
+            this.btn_Tim.Size = new System.Drawing.Size(147, 40);
             this.btn_Tim.TabIndex = 78;
             this.btn_Tim.Text = "Tìm kiếm";
             this.btn_Tim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -242,11 +242,11 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label2.Location = new System.Drawing.Point(597, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 21);
+            this.label2.Size = new System.Drawing.Size(246, 28);
             this.label2.TabIndex = 64;
             this.label2.Text = "Sinh viên/ Giảng viên";
             // 
@@ -269,23 +269,25 @@
             this.panel8.Controls.Add(this.txtHocVi);
             this.panel8.Location = new System.Drawing.Point(572, 24);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(350, 192);
+            this.panel8.Size = new System.Drawing.Size(350, 205);
             this.panel8.TabIndex = 76;
             // 
             // cbbKhoa
             // 
+            this.cbbKhoa.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbKhoa.FormattingEnabled = true;
-            this.cbbKhoa.Location = new System.Drawing.Point(215, 148);
+            this.cbbKhoa.Location = new System.Drawing.Point(215, 158);
             this.cbbKhoa.Name = "cbbKhoa";
-            this.cbbKhoa.Size = new System.Drawing.Size(121, 24);
+            this.cbbKhoa.Size = new System.Drawing.Size(121, 31);
             this.cbbKhoa.TabIndex = 63;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(212, 129);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 16);
+            this.label5.Size = new System.Drawing.Size(56, 24);
             this.label5.TabIndex = 58;
             this.label5.Tag = "";
             this.label5.Text = "Khoa";
@@ -295,7 +297,7 @@
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(2, 190);
+            this.panel9.Location = new System.Drawing.Point(2, 203);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(346, 2);
             this.panel9.TabIndex = 16;
@@ -303,9 +305,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(38, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 16);
+            this.label6.Size = new System.Drawing.Size(133, 24);
             this.label6.TabIndex = 62;
             this.label6.Tag = "";
             this.label6.Text = "Lớp sinh hoạt";
@@ -317,15 +320,16 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(2, 190);
+            this.panel10.Size = new System.Drawing.Size(2, 203);
             this.panel10.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(212, 69);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 16);
+            this.label8.Size = new System.Drawing.Size(66, 24);
             this.label8.TabIndex = 61;
             this.label8.Tag = "";
             this.label8.Text = "Học vị";
@@ -343,9 +347,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(38, 69);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 16);
+            this.label9.Size = new System.Drawing.Size(129, 24);
             this.label9.TabIndex = 57;
             this.label9.Tag = "";
             this.label9.Text = "Mã Sinh Viên";
@@ -357,23 +362,25 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel13.Location = new System.Drawing.Point(348, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(2, 192);
+            this.panel13.Size = new System.Drawing.Size(2, 205);
             this.panel13.TabIndex = 18;
             // 
             // cbbLSH
             // 
+            this.cbbLSH.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLSH.FormattingEnabled = true;
-            this.cbbLSH.Location = new System.Drawing.Point(41, 148);
+            this.cbbLSH.Location = new System.Drawing.Point(41, 158);
             this.cbbLSH.Name = "cbbLSH";
-            this.cbbLSH.Size = new System.Drawing.Size(121, 24);
+            this.cbbLSH.Size = new System.Drawing.Size(121, 31);
             this.cbbLSH.TabIndex = 59;
             // 
             // rbSV
             // 
             this.rbSV.AutoSize = true;
+            this.rbSV.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSV.Location = new System.Drawing.Point(41, 32);
             this.rbSV.Name = "rbSV";
-            this.rbSV.Size = new System.Drawing.Size(82, 20);
+            this.rbSV.Size = new System.Drawing.Size(113, 28);
             this.rbSV.TabIndex = 21;
             this.rbSV.TabStop = true;
             this.rbSV.Text = "Sinh viên";
@@ -382,17 +389,19 @@
             // 
             // txtMSSV
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(41, 86);
+            this.txtMSSV.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMSSV.Location = new System.Drawing.Point(41, 96);
             this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(121, 22);
+            this.txtMSSV.Size = new System.Drawing.Size(121, 31);
             this.txtMSSV.TabIndex = 58;
             // 
             // rbGV
             // 
             this.rbGV.AutoSize = true;
+            this.rbGV.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbGV.Location = new System.Drawing.Point(215, 32);
             this.rbGV.Name = "rbGV";
-            this.rbGV.Size = new System.Drawing.Size(92, 20);
+            this.rbGV.Size = new System.Drawing.Size(125, 28);
             this.rbGV.TabIndex = 22;
             this.rbGV.TabStop = true;
             this.rbGV.Text = "Giảng viên";
@@ -401,9 +410,10 @@
             // 
             // txtHocVi
             // 
-            this.txtHocVi.Location = new System.Drawing.Point(215, 86);
+            this.txtHocVi.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHocVi.Location = new System.Drawing.Point(215, 96);
             this.txtHocVi.Name = "txtHocVi";
-            this.txtHocVi.Size = new System.Drawing.Size(121, 22);
+            this.txtHocVi.Size = new System.Drawing.Size(121, 31);
             this.txtHocVi.TabIndex = 57;
             // 
             // panel5
@@ -419,10 +429,10 @@
             // 
             this.txtMadocgia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtMadocgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMadocgia.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMadocgia.Location = new System.Drawing.Point(247, 137);
             this.txtMadocgia.Name = "txtMadocgia";
-            this.txtMadocgia.Size = new System.Drawing.Size(221, 27);
+            this.txtMadocgia.Size = new System.Drawing.Size(221, 31);
             this.txtMadocgia.TabIndex = 74;
             // 
             // panel6
@@ -439,10 +449,10 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(75, 143);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 20);
+            this.label7.Size = new System.Drawing.Size(105, 24);
             this.label7.TabIndex = 73;
             this.label7.Text = "Mã độc giả";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -460,10 +470,10 @@
             // 
             this.txtDiachi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiachi.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.Location = new System.Drawing.Point(247, 82);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(221, 27);
+            this.txtDiachi.Size = new System.Drawing.Size(221, 31);
             this.txtDiachi.TabIndex = 71;
             // 
             // panel11
@@ -480,10 +490,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(80, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 68;
             this.label1.Tag = "";
             this.label1.Text = "Họ tên";
@@ -494,10 +504,10 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(76, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(73, 24);
             this.label4.TabIndex = 70;
             this.label4.Text = "Địa chỉ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -506,10 +516,10 @@
             // 
             this.txtHvt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtHvt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHvt.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHvt.Location = new System.Drawing.Point(247, 26);
             this.txtHvt.Name = "txtHvt";
-            this.txtHvt.Size = new System.Drawing.Size(221, 27);
+            this.txtHvt.Size = new System.Drawing.Size(221, 31);
             this.txtHvt.TabIndex = 69;
             // 
             // Docgia_Tim

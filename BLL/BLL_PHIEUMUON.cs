@@ -270,23 +270,6 @@ namespace QuanLyThuVien.BLL
 
         public void xoaAllChiTietPhieuMuonTheoMaPhieuMuon(string maphieumuon, string madocgia)
         {
-            //QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
-            //List<CHITIETPHIEUMUON> list_chitietphieumuon = entities.CHITIETPHIEUMUONs.
-            //    Where((p) => p.MAPHIEU == maphieumuon).
-            //    ToList();
-            //foreach (CHITIETPHIEUMUON chitietphieumuon in list_chitietphieumuon)
-            //{
-            //    // xoa record trong chitietphieumuon
-            //    entities.CHITIETPHIEUMUONs.Remove(chitietphieumuon);
-            //    // cap nhat so luong sach
-            //    SACH sach = entities.SACHes.Where(p => p.MASACH == chitietphieumuon.MASACH).FirstOrDefault();
-            //    sach.SLHIENTAI += chitietphieumuon.SOLUONG;
-            //    sach.SLDANGMUON -= chitietphieumuon.SOLUONG;
-            //    // cap nhat so luong sach cua doc gia
-            //    DOCGIA docgia = entities.DOCGIAs.Where(p => p.MADOCGIA == madocgia).FirstOrDefault();
-            //    docgia.SOSACHMUON -= chitietphieumuon.SOLUONG;
-            //}
-            //entities.SaveChanges();
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             List<CHITIETPHIEUMUON> list_chitietphieumuon = entities.CHITIETPHIEUMUONs.
                 Where((p) => p.MAPHIEU == maphieumuon).

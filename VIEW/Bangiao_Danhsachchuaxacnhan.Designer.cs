@@ -49,11 +49,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(39, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(344, 24);
+            this.label4.Size = new System.Drawing.Size(386, 28);
             this.label4.TabIndex = 92;
             this.label4.Text = "Danh sách bàn giao chưa xác nhận";
             // 
@@ -83,7 +83,7 @@
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXacNhan.Location = new System.Drawing.Point(730, 482);
             this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(196, 39);
+            this.btnXacNhan.Size = new System.Drawing.Size(201, 39);
             this.btnXacNhan.TabIndex = 91;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.btnTuChoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTuChoi.Location = new System.Drawing.Point(183, 482);
             this.btnTuChoi.Name = "btnTuChoi";
-            this.btnTuChoi.Size = new System.Drawing.Size(180, 39);
+            this.btnTuChoi.Size = new System.Drawing.Size(189, 39);
             this.btnTuChoi.TabIndex = 96;
             this.btnTuChoi.Text = "Từ chối";
             this.btnTuChoi.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHienThi.Location = new System.Drawing.Point(464, 482);
             this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(187, 39);
+            this.btnHienThi.Size = new System.Drawing.Size(194, 39);
             this.btnHienThi.TabIndex = 94;
             this.btnHienThi.Text = "Hiển Thị";
             this.btnHienThi.UseVisualStyleBackColor = true;

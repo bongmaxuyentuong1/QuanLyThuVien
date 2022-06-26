@@ -106,12 +106,12 @@
             // 
             this.txtXNMK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtXNMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtXNMK.Font = new System.Drawing.Font("Constantia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXNMK.Font = new System.Drawing.Font("Consolas", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXNMK.ForeColor = System.Drawing.Color.Gray;
             this.txtXNMK.Location = new System.Drawing.Point(396, 181);
             this.txtXNMK.Margin = new System.Windows.Forms.Padding(4);
             this.txtXNMK.Name = "txtXNMK";
-            this.txtXNMK.Size = new System.Drawing.Size(338, 27);
+            this.txtXNMK.Size = new System.Drawing.Size(338, 26);
             this.txtXNMK.TabIndex = 74;
             this.txtXNMK.Text = "Xác nhận mật khẩu mới";
             this.txtXNMK.TextChanged += new System.EventHandler(this.txtXNMK_TextChanged);
@@ -122,12 +122,12 @@
             // 
             this.txtMKM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMKM.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMKM.Font = new System.Drawing.Font("Constantia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMKM.Font = new System.Drawing.Font("Consolas", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMKM.ForeColor = System.Drawing.Color.Gray;
             this.txtMKM.Location = new System.Drawing.Point(396, 128);
             this.txtMKM.Margin = new System.Windows.Forms.Padding(4);
             this.txtMKM.Name = "txtMKM";
-            this.txtMKM.Size = new System.Drawing.Size(338, 27);
+            this.txtMKM.Size = new System.Drawing.Size(338, 26);
             this.txtMKM.TabIndex = 73;
             this.txtMKM.Text = "Nhập vào mật khẩu mới";
             this.txtMKM.TextChanged += new System.EventHandler(this.txtMKM_TextChanged);
@@ -138,12 +138,12 @@
             // 
             this.txtMKC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMKC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMKC.Font = new System.Drawing.Font("Constantia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMKC.Font = new System.Drawing.Font("Consolas", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMKC.ForeColor = System.Drawing.Color.Gray;
             this.txtMKC.Location = new System.Drawing.Point(396, 79);
             this.txtMKC.Margin = new System.Windows.Forms.Padding(4);
             this.txtMKC.Name = "txtMKC";
-            this.txtMKC.Size = new System.Drawing.Size(338, 27);
+            this.txtMKC.Size = new System.Drawing.Size(338, 26);
             this.txtMKC.TabIndex = 72;
             this.txtMKC.Text = "Nhập vào mật khẩu cũ";
             this.txtMKC.TextChanged += new System.EventHandler(this.txtMKC_TextChanged);

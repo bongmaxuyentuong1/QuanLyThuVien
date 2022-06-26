@@ -336,7 +336,7 @@ namespace QuanLyThuVien.BLL
             List<SACH_VIEW> data = new List<SACH_VIEW>();
             foreach (SACH_VIEW s in getSach())
             {
-                if (s.SLDANGMUON >= 3)
+                if (s.SLDANGMUON >= 10)
                 {
                     data.Add(s);
                 }

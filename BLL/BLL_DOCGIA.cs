@@ -442,7 +442,7 @@ namespace QuanLyThuVien.BLL
         {
             QuanLyThuVienEntities db = new QuanLyThuVienEntities();
             List<DOCGIA> l1 = (from dg in db.DOCGIAs
-                            where dg.SOSACHMUON >= 3
+                            where dg.SOSACHMUON >= 10
                             select dg).ToList();
                             //select new DOCGIA
                             //{
@@ -474,19 +474,16 @@ namespace QuanLyThuVien.BLL
                          Ma_Phieu = pm.MAPHIEU,
                          Ma_Sach = ctpm.MASACH,
                          Ngay_Muon = pm.NGAYMUON,
+                         Ngay_Tra = pm.NGAYTRA,
                          Noi_Dung_Vi_Pham = ""
                      };
             List<DOCGIA_VIPHAM> data = l1.ToList();
             List<DOCGIA_VIPHAM> dataResult = new List<DOCGIA_VIPHAM>();
             foreach (DOCGIA_VIPHAM d in data)
             {
-                if (TinhNgayTre(d.Ngay_Muon) >= 15 && d.Tra == "False")
+                if (DateTime.Compare(d.Ngay_Tra, DateTime.Now) < 0)
                 {
-                    d.Noi_Dung_Vi_Pham = "Qua han " + TinhNgayTre(d.Ngay_Muon).ToString() + " ngay";
-                    dataResult.Add(d);
-                }
-                else if (d.Tra == "True")
-                {
+                    d.Noi_Dung_Vi_Pham = "Qua han " + TinhNgayTre(d.Ngay_Tra).ToString() + " ngay";
                     dataResult.Add(d);
                 }
             }

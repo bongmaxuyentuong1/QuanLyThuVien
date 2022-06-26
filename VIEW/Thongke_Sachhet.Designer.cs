@@ -52,18 +52,18 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Location = new System.Drawing.Point(12, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1212, 529);
+            this.panel1.Size = new System.Drawing.Size(1194, 520);
             this.panel1.TabIndex = 30;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(489, 27);
+            this.label4.Location = new System.Drawing.Point(480, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 39);
+            this.label4.Size = new System.Drawing.Size(197, 41);
             this.label4.TabIndex = 28;
             this.label4.Text = "Sách đã hết";
             // 
@@ -72,21 +72,22 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(27, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1160, 419);
+            this.dataGridView1.Size = new System.Drawing.Size(1142, 410);
             this.dataGridView1.TabIndex = 19;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(2, 527);
+            this.panel2.Location = new System.Drawing.Point(2, 518);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1208, 2);
+            this.panel2.Size = new System.Drawing.Size(1190, 2);
             this.panel2.TabIndex = 16;
             // 
             // panel3
@@ -95,7 +96,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 527);
+            this.panel3.Size = new System.Drawing.Size(2, 518);
             this.panel3.TabIndex = 17;
             // 
             // panel4
@@ -104,16 +105,16 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1210, 2);
+            this.panel4.Size = new System.Drawing.Size(1192, 2);
             this.panel4.TabIndex = 15;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1210, 0);
+            this.panel5.Location = new System.Drawing.Point(1192, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 529);
+            this.panel5.Size = new System.Drawing.Size(2, 520);
             this.panel5.TabIndex = 18;
             // 
             // Thongke_Sachhet
@@ -121,7 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1236, 562);
+            this.ClientSize = new System.Drawing.Size(1218, 553);
             this.Controls.Add(this.panel1);
             this.Name = "Thongke_Sachhet";
             this.Text = "Thongke_Sachhet";

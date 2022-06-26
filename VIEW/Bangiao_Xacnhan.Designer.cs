@@ -54,11 +54,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(33, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 23);
+            this.label4.Size = new System.Drawing.Size(212, 28);
             this.label4.TabIndex = 96;
             this.label4.Text = "Xác nhận bàn giao";
             // 
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Location = new System.Drawing.Point(18, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(923, 434);
+            this.panel1.Size = new System.Drawing.Size(1118, 434);
             this.panel1.TabIndex = 95;
             // 
             // dataGridView1
@@ -92,21 +92,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(381, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(474, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(505, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(624, 270);
             this.dataGridView1.TabIndex = 103;
             // 
             // lbNgayXacNhan
             // 
             this.lbNgayXacNhan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbNgayXacNhan.AutoSize = true;
-            this.lbNgayXacNhan.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayXacNhan.Location = new System.Drawing.Point(208, 227);
+            this.lbNgayXacNhan.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayXacNhan.Location = new System.Drawing.Point(241, 227);
             this.lbNgayXacNhan.Name = "lbNgayXacNhan";
-            this.lbNgayXacNhan.Size = new System.Drawing.Size(149, 21);
+            this.lbNgayXacNhan.Size = new System.Drawing.Size(177, 24);
             this.lbNgayXacNhan.TabIndex = 102;
             this.lbNgayXacNhan.Text = "Mã người bàn giao";
             // 
@@ -114,10 +114,10 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(42, 227);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 21);
+            this.label5.Size = new System.Drawing.Size(140, 24);
             this.label5.TabIndex = 101;
             this.label5.Text = "Ngày xác nhận";
             // 
@@ -125,10 +125,10 @@
             // 
             this.lbMaBanGiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbMaBanGiao.AutoSize = true;
-            this.lbMaBanGiao.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaBanGiao.Location = new System.Drawing.Point(208, 165);
+            this.lbMaBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaBanGiao.Location = new System.Drawing.Point(241, 165);
             this.lbMaBanGiao.Name = "lbMaBanGiao";
-            this.lbMaBanGiao.Size = new System.Drawing.Size(149, 21);
+            this.lbMaBanGiao.Size = new System.Drawing.Size(177, 24);
             this.lbMaBanGiao.TabIndex = 100;
             this.lbMaBanGiao.Text = "Mã người bàn giao";
             // 
@@ -136,10 +136,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 21);
+            this.label2.Size = new System.Drawing.Size(118, 24);
             this.label2.TabIndex = 99;
             this.label2.Text = "Mã bàn giao";
             // 
@@ -147,10 +147,10 @@
             // 
             this.lbMaNguoiXacNhan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbMaNguoiXacNhan.AutoSize = true;
-            this.lbMaNguoiXacNhan.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaNguoiXacNhan.Location = new System.Drawing.Point(208, 100);
+            this.lbMaNguoiXacNhan.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaNguoiXacNhan.Location = new System.Drawing.Point(241, 100);
             this.lbMaNguoiXacNhan.Name = "lbMaNguoiXacNhan";
-            this.lbMaNguoiXacNhan.Size = new System.Drawing.Size(149, 21);
+            this.lbMaNguoiXacNhan.Size = new System.Drawing.Size(177, 24);
             this.lbMaNguoiXacNhan.TabIndex = 98;
             this.lbMaNguoiXacNhan.Text = "Mã người bàn giao";
             // 
@@ -158,20 +158,20 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 21);
+            this.label1.Size = new System.Drawing.Size(182, 24);
             this.label1.TabIndex = 97;
             this.label1.Text = "Mã người xác nhận";
             // 
             // btnXacNhan
             // 
             this.btnXacNhan.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnXacNhan.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXacNhan.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnXacNhan.Image")));
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXacNhan.Location = new System.Drawing.Point(601, 368);
+            this.btnXacNhan.Location = new System.Drawing.Point(699, 368);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(196, 39);
             this.btnXacNhan.TabIndex = 91;
@@ -182,10 +182,10 @@
             // btnTuChoi
             // 
             this.btnTuChoi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnTuChoi.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuChoi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuChoi.Image = ((System.Drawing.Image)(resources.GetObject("btnTuChoi.Image")));
             this.btnTuChoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTuChoi.Location = new System.Drawing.Point(101, 368);
+            this.btnTuChoi.Location = new System.Drawing.Point(199, 368);
             this.btnTuChoi.Name = "btnTuChoi";
             this.btnTuChoi.Size = new System.Drawing.Size(187, 39);
             this.btnTuChoi.TabIndex = 96;
@@ -199,7 +199,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(2, 432);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(919, 2);
+            this.panel2.Size = new System.Drawing.Size(1114, 2);
             this.panel2.TabIndex = 16;
             // 
             // panel3
@@ -217,14 +217,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(921, 2);
+            this.panel4.Size = new System.Drawing.Size(1116, 2);
             this.panel4.TabIndex = 15;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(921, 0);
+            this.panel5.Location = new System.Drawing.Point(1116, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(2, 434);
             this.panel5.TabIndex = 18;
@@ -234,7 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(965, 466);
+            this.ClientSize = new System.Drawing.Size(1160, 466);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Name = "Bangiao_Xacnhan";

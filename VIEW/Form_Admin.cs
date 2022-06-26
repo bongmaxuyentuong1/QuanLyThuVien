@@ -97,7 +97,7 @@ namespace QuanLyThuVien.VIEW
         }
         private void btnQLMT2_Click(object sender, EventArgs e)
         {
-            PM_Them f = new PM_Them(this.manguoidung);
+            PM_Sua f = new PM_Sua(this.manguoidung);
             openChildForm(f);
         }
         private void btnQLMT3_Click(object sender, EventArgs e)

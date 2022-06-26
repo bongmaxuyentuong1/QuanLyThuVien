@@ -128,9 +128,11 @@ namespace QuanLyThuVien.VIEW
             {
                 string id = dataGridView1.SelectedRows[0].Cells["MASACH"].Value.ToString();
                 List<PM_VIEW_SOLUONG> list_new = BLL_PHIEUMUON.Instance.xoaDongDGVSoLuong((List<PM_VIEW_SOLUONG>)dataGridView1.DataSource, id);
+                //List<PM_VIEW_SOLUONG> list_new = BLL_PHIEUMUON.Instance.xoaDongDGVSoLuong((List<PM_VIEW_SOLUONG>)dataGridView1.DataSource, id, txtMaDocGia.Text);
                 dataGridView1.DataSource = typeof(List<PM_VIEW_SOLUONG>);
                 dataGridView1.DataSource = list_new;
                 setDGVColumnsHeader();
+
             }
             else
             {

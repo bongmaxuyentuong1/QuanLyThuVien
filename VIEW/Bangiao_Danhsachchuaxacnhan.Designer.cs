@@ -49,11 +49,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(39, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(362, 23);
+            this.label4.Size = new System.Drawing.Size(344, 24);
             this.label4.TabIndex = 92;
             this.label4.Text = "Danh sách bàn giao chưa xác nhận";
             // 
@@ -78,7 +78,7 @@
             // btnXacNhan
             // 
             this.btnXacNhan.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXacNhan.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnXacNhan.Image")));
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXacNhan.Location = new System.Drawing.Point(730, 482);
@@ -92,7 +92,7 @@
             // btnTuChoi
             // 
             this.btnTuChoi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnTuChoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuChoi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuChoi.Image = ((System.Drawing.Image)(resources.GetObject("btnTuChoi.Image")));
             this.btnTuChoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTuChoi.Location = new System.Drawing.Point(183, 482);
@@ -124,7 +124,7 @@
             // btnHienThi
             // 
             this.btnHienThi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHienThi.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHienThi.Image = ((System.Drawing.Image)(resources.GetObject("btnHienThi.Image")));
             this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHienThi.Location = new System.Drawing.Point(464, 482);

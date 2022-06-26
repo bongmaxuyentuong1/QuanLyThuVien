@@ -30,7 +30,17 @@ namespace QuanLyThuVien.VIEW
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
 
-            //
+            string mangonngu = lbMaNgonNguMoi.Text;
+            string tenngongu = txtTenNgonNgu.Text;
+            if(tenngongu == null || tenngongu.Length == 0)
+            {
+                CN_Thongbao f = new CN_Thongbao();
+                f.setNotice("Nhap ten ngon ngu");
+            }
+            else
+            {
+                BLL_SACH.Instance.themNgonNgu(mangonngu, tenngongu);
+            }
             _reload();
             GUI();
         }

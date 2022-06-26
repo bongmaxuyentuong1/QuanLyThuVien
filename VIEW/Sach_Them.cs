@@ -34,6 +34,7 @@ namespace QuanLyThuVien.VIEW
         }
         public void GUI()
         {
+            cbbNgonNgu.Items.Clear();
             List<string> nns = BLL_SACH.Instance.getAllNgonNgu();
             for (int i = 1; i <= nns.Count; i++)
             {
@@ -41,6 +42,7 @@ namespace QuanLyThuVien.VIEW
             }
             cbbNgonNgu.SelectedIndex = 0;
 
+            cbbNXB.Items.Clear();
             List<string> nxbs = BLL_SACH.Instance.getAllNXB();
             for (int i = 1; i <= nxbs.Count; i++)
             {
@@ -48,6 +50,7 @@ namespace QuanLyThuVien.VIEW
             }
             cbbNXB.SelectedIndex = 0;
 
+            cbbTheLoai.Items.Clear();
             List<string> theloais = BLL_SACH.Instance.getAllTheloai();
             for (int i = 1; i <= theloais.Count; i++)
             {
@@ -120,12 +123,15 @@ namespace QuanLyThuVien.VIEW
         private void btnThemTheLoai_Click(object sender, EventArgs e)
         {
             Theloai_Them f = new Theloai_Them();
+            f._reload = GUI;
             f.Show();
         }
 
         private void btnThemNgonNgu_Click(object sender, EventArgs e)
         {
             Ngonngu_Them f = new Ngonngu_Them();
+            f._reload = GUI;
+
             f.Show();
         }
 

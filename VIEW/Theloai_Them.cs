@@ -29,6 +29,18 @@ namespace QuanLyThuVien.VIEW
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
 
+            string matheloai = lbMaTheLoaiMoi.Text;
+            string tentheloai = txtTenTheLoai.Text;
+            if (tentheloai == null || tentheloai.Length == 0)
+            {
+                CN_Thongbao f = new CN_Thongbao();
+                f.setNotice("Nhap ten ngon ngu");
+            }
+            else
+            {
+                BLL_SACH.Instance.themTheLoai(matheloai, tentheloai);
+            }
+
             //
             _reload();
             GUI();

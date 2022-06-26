@@ -68,26 +68,5 @@ namespace QuanLyThuVien.VIEW
             dataGridView1.DataSource = BLL_NGUOIDUNG.Instance.getAllUserViews();
             d();
         }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                List<string> list_manguoidung = new List<string>();
-                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-                {
-                    list_manguoidung.Add(row.Cells["MANGUOIDUNG"].Value.ToString());
-                }
-                BLL_NGUOIDUNG.Instance.xoaNguoiDung(list_manguoidung);
-                dataGridView1.DataSource = BLL_NGUOIDUNG.Instance.getAllUserViews();
-                setDGVColumnsHeader();
-            }
-            else
-            {
-                //MessageBox.Show("Chon dong de xoa");
-                CN_Thongbao f = new CN_Thongbao();
-                f.setNotice("Vui lòng chọn dòng để xóa!");
-            }
-        }
     }
 }

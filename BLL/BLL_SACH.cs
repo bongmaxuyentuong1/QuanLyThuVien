@@ -57,7 +57,39 @@ namespace QuanLyThuVien.BLL
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             return entities.NXBs.Select(p => p.TENNXB).ToList();
         }
-
+        public void themNgonNgu(string mangonngu, string tenngonngu)
+        {
+            QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            NGONNGU ngonngumoi = new NGONNGU()
+            {
+                MANGONNGU = mangonngu,
+                TENNGONNGU = tenngonngu
+            };
+            entities.NGONNGUs.Add(ngonngumoi);
+            entities.SaveChanges();
+        }
+        public void themNXB(string manxb, string tennxb)
+        {
+            QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            NXB nxb = new NXB()
+            {
+                MANXB = manxb,
+                TENNXB = tennxb
+            };
+            entities.NXBs.Add(nxb);
+            entities.SaveChanges();
+        }
+        public void themTheLoai(string matheloai, string tentheloai)
+        {
+            QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            THELOAI theloai = new THELOAI()
+            {
+                MATHELOAI = matheloai,
+                TENTHELOAI = tentheloai
+            };
+            entities.THELOAIs.Add(theloai);
+            entities.SaveChanges();
+        }
         public SACH findSachByMasach(string masach)
         {
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();

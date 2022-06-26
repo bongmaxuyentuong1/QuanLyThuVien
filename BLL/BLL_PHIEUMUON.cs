@@ -63,7 +63,7 @@ namespace QuanLyThuVien.BLL
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             DOCGIA docgia = entities.DOCGIAs.Where(p => p.MADOCGIA == madocgia).FirstOrDefault();
             //MessageBox.Show(docgia.SOSACHMUON.ToString());
-            if (docgia == null || docgia.SOSACHMUON >= 20)
+            if (docgia == null || docgia.SOSACHMUON > 20)
             {
                 res = false;
             }
@@ -85,67 +85,36 @@ namespace QuanLyThuVien.BLL
 
         public List<PM_VIEW_SOLUONG> themVaoDGVSoLuong(string madocgia, string masach, int soluong, List<PM_VIEW_SOLUONG> list)
         {
-            if (soluong == 0)
+            QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            SACH sach = entities.SACHes.Where(p => p.MASACH == masach).FirstOrDefault();
+            if (list == null)
             {
-                return list;
+                list = new List<PM_VIEW_SOLUONG>();
             }
-
-            SACH sach = BLL_SACH.Instance.findSachByMasach(masach);
-            int soluonghienco = 0;
-            int soluongdamuon = (int)BLL_DOCGIA.Instance.timDocGiaTheoMaDocGia(madocgia).SOSACHMUON;
             if (sach == null)
             {
-                PM_Danhsach.showMessage("Mã sách không tồn tại trong dữ liệu");
+                CN_Thongbao f = new CN_Thongbao();
+                f.setNotice("Ma sach khong ton tai");
                 return list;
             }
-            else
+            foreach (PM_VIEW_SOLUONG v in list)
             {
-                if (list == null)
+                if (v.MASACH == masach)
                 {
-                    list = new List<PM_VIEW_SOLUONG>();
-                }
-                soluonghienco = (int)sach.SLHIENTAI;
-                bool inDGV = false;
-                int soluongtrongdgv = 0;
-                int soluongtrung = 0;
-                foreach (PM_VIEW_SOLUONG v in list)
-                {
-                    soluongtrongdgv += v.SOLUONG;
-                    if (v.MASACH == masach)
-                    {
-                        inDGV = true;
-                        soluongtrung = v.SOLUONG;
-                    }
-                }
-
-                if (!inDGV) // khong co trong DGV => them
-                {
-                    if (soluongdamuon + soluong + soluongtrongdgv > 20)
-                    {
-                        PM_Danhsach.showMessage("Số lượng mượn quá cho phép!");
-                        return list;
-                    }
-                    if (soluonghienco < soluong)
-                    {
-                        PM_Danhsach.showMessage("Số lượng sách không đủ để mượn!");
-                        return list;
-                    }
-                    list.Add(new PM_VIEW_SOLUONG()
-                    {
-                        MASACH = masach,
-                        SOLUONG = soluong,
-                    });
-                    return list;
-                }
-                else // chinh sua
-                {
-                    PM_Danhsach.showMessage("Trùng mã sách");
+                    CN_Thongbao f = new CN_Thongbao();
+                    f.setNotice("Ma sach da ton tai trong bang");
                     return list;
                 }
             }
+            list.Add(new PM_VIEW_SOLUONG()
+            {
+                MASACH = masach,
+                SOLUONG = soluong,
+            });
+            return list;
         }
         public List<PM_VIEW_SOLUONG> xoaDongDGVSoLuong(List<PM_VIEW_SOLUONG> list, string masach)
-        {
+        { // xoa trong dgv => ko xoa trong du lieu
             foreach (PM_VIEW_SOLUONG v in list)
             {
                 if (v.MASACH == masach)
@@ -193,7 +162,32 @@ namespace QuanLyThuVien.BLL
         public string themPhieuMuon(string maphieumuon, string madocgia, DateTime ngaymuon, DateTime ngaytra,
             string manguoidung, List<PM_VIEW_SOLUONG> list)
         {
+            //string res = "Them thanh cong!";
+            //QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            //// Them vao phieu muon
+            //PHIEUMUON phieumuon = new PHIEUMUON()
+            //{
+            //    MAPHIEU = maphieumuon,
+            //    MADOCGIA = madocgia,
+            //    MANGUOIDUNG = manguoidung,
+            //    NGAYMUON = ngaymuon,
+            //    NGAYTRA = ngaytra,
+            //};
+            //entities.PHIEUMUONs.Add(phieumuon);
+            //entities.SaveChanges();
+            //themChiTietPhieuMuon(maphieumuon, madocgia, ngaymuon, ngaytra, manguoidung, list);
+            //entities.SaveChanges();
+            //return res;
             string res = "Them thanh cong!";
+            int slInDGV = 0;
+            foreach (PM_VIEW_SOLUONG v in list)
+            {
+                slInDGV += v.SOLUONG;
+            }
+            if (slInDGV + BLL_DOCGIA.Instance.timDocGiaTheoMaDocGia(madocgia).SOSACHMUON > 20)
+            {
+                return "Them that bai! Kiem tra so luong!";
+            }
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             // Them vao phieu muon
             PHIEUMUON phieumuon = new PHIEUMUON()
@@ -248,7 +242,24 @@ namespace QuanLyThuVien.BLL
         public void suaPhieuMuon(string maphieumuon, string madocgia, DateTime ngaymuon, DateTime ngaytra,
             string manguoidung, List<PM_VIEW_SOLUONG> list)
         {
+            int slInDGV = 0;
+            foreach (PM_VIEW_SOLUONG v in list)
+            {
+                slInDGV += v.SOLUONG;
+            }
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            List<CHITIETPHIEUMUON> list_chitietphieumuon = entities.CHITIETPHIEUMUONs.Where((p) => p.MAPHIEU == maphieumuon).ToList();
+            foreach (CHITIETPHIEUMUON chitietphieumuon in list_chitietphieumuon)
+            {
+                slInDGV -= chitietphieumuon.SOLUONG;
+            }
+            if (slInDGV + BLL_DOCGIA.Instance.timDocGiaTheoMaDocGia(madocgia).SOSACHMUON > 20)
+            {
+                CN_Thongbao f = new CN_Thongbao();
+                f.setNotice("Thêm thất bại! Kiểm tra số lượng!");
+                f.Show();
+                return;
+            }
             PHIEUMUON phieumuon = entities.PHIEUMUONs.Where(p => p.MAPHIEU == maphieumuon).FirstOrDefault();
             phieumuon.MADOCGIA = madocgia;
             phieumuon.NGAYTRA = ngaytra;
@@ -259,6 +270,23 @@ namespace QuanLyThuVien.BLL
 
         public void xoaAllChiTietPhieuMuonTheoMaPhieuMuon(string maphieumuon, string madocgia)
         {
+            //QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
+            //List<CHITIETPHIEUMUON> list_chitietphieumuon = entities.CHITIETPHIEUMUONs.
+            //    Where((p) => p.MAPHIEU == maphieumuon).
+            //    ToList();
+            //foreach (CHITIETPHIEUMUON chitietphieumuon in list_chitietphieumuon)
+            //{
+            //    // xoa record trong chitietphieumuon
+            //    entities.CHITIETPHIEUMUONs.Remove(chitietphieumuon);
+            //    // cap nhat so luong sach
+            //    SACH sach = entities.SACHes.Where(p => p.MASACH == chitietphieumuon.MASACH).FirstOrDefault();
+            //    sach.SLHIENTAI += chitietphieumuon.SOLUONG;
+            //    sach.SLDANGMUON -= chitietphieumuon.SOLUONG;
+            //    // cap nhat so luong sach cua doc gia
+            //    DOCGIA docgia = entities.DOCGIAs.Where(p => p.MADOCGIA == madocgia).FirstOrDefault();
+            //    docgia.SOSACHMUON -= chitietphieumuon.SOLUONG;
+            //}
+            //entities.SaveChanges();
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             List<CHITIETPHIEUMUON> list_chitietphieumuon = entities.CHITIETPHIEUMUONs.
                 Where((p) => p.MAPHIEU == maphieumuon).

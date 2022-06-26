@@ -122,6 +122,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(39, 29);
             this.dataGridView1.Name = "dataGridView1";
@@ -209,7 +210,7 @@
             this.btn_XacNhan1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_XacNhan1.Location = new System.Drawing.Point(444, 114);
             this.btn_XacNhan1.Name = "btn_XacNhan1";
-            this.btn_XacNhan1.Size = new System.Drawing.Size(123, 39);
+            this.btn_XacNhan1.Size = new System.Drawing.Size(136, 39);
             this.btn_XacNhan1.TabIndex = 102;
             this.btn_XacNhan1.Text = "Xác nhận";
             this.btn_XacNhan1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -367,7 +368,7 @@
             this.btn_XacNhan2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_XacNhan2.Location = new System.Drawing.Point(23, 188);
             this.btn_XacNhan2.Name = "btn_XacNhan2";
-            this.btn_XacNhan2.Size = new System.Drawing.Size(123, 41);
+            this.btn_XacNhan2.Size = new System.Drawing.Size(135, 41);
             this.btn_XacNhan2.TabIndex = 100;
             this.btn_XacNhan2.Text = "Xác nhận";
             this.btn_XacNhan2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -380,7 +381,7 @@
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F);
             this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
             this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Xoa.Location = new System.Drawing.Point(323, 190);
+            this.btn_Xoa.Location = new System.Drawing.Point(363, 190);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(96, 39);
             this.btn_Xoa.TabIndex = 99;
@@ -395,7 +396,7 @@
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F);
             this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
             this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sua.Location = new System.Drawing.Point(188, 188);
+            this.btn_Sua.Location = new System.Drawing.Point(228, 188);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(98, 41);
             this.btn_Sua.TabIndex = 98;
@@ -409,6 +410,7 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(516, 36);
             this.dataGridView2.Name = "dataGridView2";

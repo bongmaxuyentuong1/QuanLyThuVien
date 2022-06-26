@@ -102,6 +102,7 @@ namespace QuanLyThuVien.VIEW
                 BLL_PHIEUMUON.Instance.xoaAllChiTietPhieuMuonTheoMaPhieuMuon(maphieu, madocgia);
                 BLL_PHIEUMUON.Instance.xoaPhieuMuon(maphieu);
                 GUI();
+                showDGV();
             }
             else
             {
@@ -116,16 +117,17 @@ namespace QuanLyThuVien.VIEW
             {
                 string maphieumuon = dataGridView1.SelectedRows[0].Cells["MAPHIEUMUON"].Value.ToString();
                 PM_Sua pM_Sua = new PM_Sua(manguoidung, maphieumuon);
+                pM_Sua.d = new PM_Sua.Mydel(showDGV);
                 pM_Sua.Show();
             }
             else if (dataGridView1.SelectedRows.Count == 0)
             {
                 PM_Sua pM_Sua = new PM_Sua(manguoidung);
+                pM_Sua.d = new PM_Sua.Mydel(showDGV);
                 pM_Sua.Show();
             }
             else
             {
-                //MessageBox.Show("Vui long chon 1 dong!");
                 CN_Thongbao f = new CN_Thongbao();
                 f.setNotice("Vui lòng chọn 1 dòng!");
             }
@@ -149,6 +151,5 @@ namespace QuanLyThuVien.VIEW
             dataGridView1.DataSource = typeof(List<PM_CHITIET>);
             dataGridView1.DataSource = BLL_PHIEUMUON.Instance.sapXepPhieuMuon(list, value);
         }
-
     }
 }

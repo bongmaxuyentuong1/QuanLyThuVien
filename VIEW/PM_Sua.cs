@@ -17,6 +17,8 @@ namespace QuanLyThuVien.VIEW
         private string manguoidung;
         private string maphieumuon;
         private PHIEUMUON phieumuon;
+        public delegate void Mydel();
+        public Mydel d;
         public PM_Sua(string manguoidung)
         {
             InitializeComponent();
@@ -142,6 +144,10 @@ namespace QuanLyThuVien.VIEW
                 DateTime ngaytra = dateTimePicker1.Value;
                 List<PM_VIEW_SOLUONG> list = (List<PM_VIEW_SOLUONG>)dataGridView2.DataSource;
                 BLL_PHIEUMUON.Instance.suaPhieuMuon(this.maphieumuon, madocgia, phieumuon.NGAYMUON, ngaytra, phieumuon.MANGUOIDUNG, list);
+                GUI();
+                if(manguoidung != null || d != null){
+                    d();
+                }
                 unableGroup3();
             }
         }
@@ -162,9 +168,14 @@ namespace QuanLyThuVien.VIEW
             {
                 string id = dataGridView2.SelectedRows[0].Cells["MASACH"].Value.ToString();
                 List<PM_VIEW_SOLUONG> list_new = BLL_PHIEUMUON.Instance.xoaDongDGVSoLuong((List<PM_VIEW_SOLUONG>)dataGridView2.DataSource, id);
+
+                //List<PM_VIEW_SOLUONG> list_new = BLL_PHIEUMUON.Instance.xoaDongDGVSoLuong((List<PM_VIEW_SOLUONG>)dataGridView2.DataSource, id, txtMaDocGia.Text);
                 dataGridView2.DataSource = typeof(List<PM_VIEW_SOLUONG>);
                 dataGridView2.DataSource = list_new;
-                setDGV2ColumnsHeader();
+                if(dataGridView2.DataSource != null && dataGridView2.Rows.Count >= 1)
+                {
+                    setDGV2ColumnsHeader();
+                }
             }
         }
     }

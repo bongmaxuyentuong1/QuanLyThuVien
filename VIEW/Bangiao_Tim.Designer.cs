@@ -110,11 +110,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 55);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(990, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(1042, 295);
             this.dataGridView1.TabIndex = 24;
             // 
             // panel4
@@ -153,10 +153,10 @@
             // 
             this.txtMaSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaSach.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSach.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSach.Location = new System.Drawing.Point(816, 101);
             this.txtMaSach.Name = "txtMaSach";
-            this.txtMaSach.Size = new System.Drawing.Size(189, 32);
+            this.txtMaSach.Size = new System.Drawing.Size(189, 31);
             this.txtMaSach.TabIndex = 71;
             // 
             // label1
@@ -175,10 +175,10 @@
             // 
             this.txtMaNguoiXacNhan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaNguoiXacNhan.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNguoiXacNhan.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNguoiXacNhan.Location = new System.Drawing.Point(816, 36);
             this.txtMaNguoiXacNhan.Name = "txtMaNguoiXacNhan";
-            this.txtMaNguoiXacNhan.Size = new System.Drawing.Size(189, 32);
+            this.txtMaNguoiXacNhan.Size = new System.Drawing.Size(189, 31);
             this.txtMaNguoiXacNhan.TabIndex = 69;
             // 
             // label2
@@ -195,10 +195,10 @@
             // 
             // txtMaNguoiBanGiao
             // 
-            this.txtMaNguoiBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNguoiBanGiao.Location = new System.Drawing.Point(214, 105);
+            this.txtMaNguoiBanGiao.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNguoiBanGiao.Location = new System.Drawing.Point(246, 104);
             this.txtMaNguoiBanGiao.Name = "txtMaNguoiBanGiao";
-            this.txtMaNguoiBanGiao.Size = new System.Drawing.Size(206, 32);
+            this.txtMaNguoiBanGiao.Size = new System.Drawing.Size(206, 31);
             this.txtMaNguoiBanGiao.TabIndex = 67;
             // 
             // label3
@@ -213,10 +213,10 @@
             // 
             // txtMaBanGiao
             // 
-            this.txtMaBanGiao.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaBanGiao.Location = new System.Drawing.Point(214, 36);
+            this.txtMaBanGiao.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaBanGiao.Location = new System.Drawing.Point(246, 35);
             this.txtMaBanGiao.Name = "txtMaBanGiao";
-            this.txtMaBanGiao.Size = new System.Drawing.Size(206, 32);
+            this.txtMaBanGiao.Size = new System.Drawing.Size(206, 31);
             this.txtMaBanGiao.TabIndex = 65;
             // 
             // label6
@@ -236,9 +236,9 @@
             this.btnThem.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(859, 167);
+            this.btnThem.Location = new System.Drawing.Point(840, 167);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(134, 49);
+            this.btnThem.Size = new System.Drawing.Size(165, 49);
             this.btnThem.TabIndex = 63;
             this.btnThem.Text = "Tìm kiếm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,11 +284,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(35, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 23);
+            this.label5.Size = new System.Drawing.Size(181, 24);
             this.label5.TabIndex = 44;
             this.label5.Text = "Tiêu chí tìm kiếm";
             // 

@@ -45,7 +45,6 @@ namespace QuanLyThuVien.VIEW
             }
             else
             {
-                //MessageBox.Show("Chon mot doi tuong de xem thong tin");
                 CN_Thongbao f = new CN_Thongbao();
                 f.setNotice("Vui lòng chọn một đối tượng để xem thông tin!");
             }

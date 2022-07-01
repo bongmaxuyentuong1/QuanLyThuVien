@@ -109,12 +109,12 @@ namespace QuanLyThuVien.VIEW
         }
         public void setDGVGVColumnsHeader()
         {
-            dataGridViewSinhvien.Columns[0].HeaderText = "Mã độc giả";
-            dataGridViewSinhvien.Columns[1].HeaderText = "Họ tên";
-            dataGridViewSinhvien.Columns[2].HeaderText = "Địa chỉ";
-            dataGridViewSinhvien.Columns[3].HeaderText = "Số sách mượn";
-            dataGridViewSinhvien.Columns[4].HeaderText = "Học vị";
-            dataGridViewSinhvien.Columns[5].HeaderText = "Khoa";
+            dataGridViewGiangvien.Columns[0].HeaderText = "Mã độc giả";
+            dataGridViewGiangvien.Columns[1].HeaderText = "Họ tên";
+            dataGridViewGiangvien.Columns[2].HeaderText = "Địa chỉ";
+            dataGridViewGiangvien.Columns[3].HeaderText = "Số sách mượn";
+            dataGridViewGiangvien.Columns[4].HeaderText = "Học vị";
+            dataGridViewGiangvien.Columns[5].HeaderText = "Khoa";
         }
         private void btn_Sua_Click(object sender, EventArgs e)
         {

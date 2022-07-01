@@ -18,11 +18,39 @@ namespace QuanLyThuVien.VIEW
         {
             InitializeComponent();
             ShowDocGiaMuonNhieu();
+            setDGVColumnsHeader();
         }
         private void ShowDocGiaMuonNhieu()
         {
             List<DOCGIA> data = BLL_DOCGIA.Instance.getDocGiaMuonNhieu();
             dataGridView1.DataSource = data;
+        }
+        public void setDGVColumnsHeader()
+        {
+            dataGridView1.Columns[0].HeaderText = "Mã độc giả";
+            dataGridView1.Columns[1].HeaderText = "Họ tên";
+            dataGridView1.Columns[2].HeaderText = "Địa chỉ";
+            dataGridView1.Columns[3].HeaderText = "Số sách mượn";
+            dataGridView1.Columns[4].Visible = false;
+        }
+
+        public void setDGVSVColumnsHeader()
+        {
+            dataGridView1.Columns[0].HeaderText = "Mã độc giả";
+            dataGridView1.Columns[1].HeaderText = "Họ tên";
+            dataGridView1.Columns[2].HeaderText = "Địa chỉ";
+            dataGridView1.Columns[3].HeaderText = "Số sách mượn";
+            dataGridView1.Columns[4].HeaderText = "Mã sinh viên";
+            dataGridView1.Columns[5].HeaderText = "Lớp sinh hoạt";
+        }
+        public void setDGVGVColumnsHeader()
+        {
+            dataGridView1.Columns[0].HeaderText = "Mã độc giả";
+            dataGridView1.Columns[1].HeaderText = "Họ tên";
+            dataGridView1.Columns[2].HeaderText = "Địa chỉ";
+            dataGridView1.Columns[3].HeaderText = "Số sách mượn";
+            dataGridView1.Columns[4].HeaderText = "Học vị";
+            dataGridView1.Columns[5].HeaderText = "Khoa";
         }
         private void btnChiTiet_Click(object sender, EventArgs e)
         {
@@ -32,21 +60,25 @@ namespace QuanLyThuVien.VIEW
                 if (BLL_DOCGIA.Instance.getChiTietSinhVien(MaDocGia).Count == 0)
                 {
                     dataGridView1.DataSource = BLL_DOCGIA.Instance.getChiTietGiangVien(MaDocGia);
+                    setDGVGVColumnsHeader();
                 }
                 else
                 {
                     dataGridView1.DataSource = BLL_DOCGIA.Instance.getChiTietSinhVien(MaDocGia);
+                    setDGVSVColumnsHeader();
                 }
             }
             else
             {
-                MessageBox.Show("Chon mot doi tuong de xem thong tin");
+                CN_Thongbao f = new CN_Thongbao();
+                f.setNotice("Chọn một đối tượng để xem thông tin");
             }
         }
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             ShowDocGiaMuonNhieu();
+            setDGVColumnsHeader();
         }
     }
 }

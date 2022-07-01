@@ -321,9 +321,9 @@
             this.btn_Sua.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
             this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sua.Location = new System.Drawing.Point(844, 196);
+            this.btn_Sua.Location = new System.Drawing.Point(837, 196);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(93, 39);
+            this.btn_Sua.Size = new System.Drawing.Size(100, 39);
             this.btn_Sua.TabIndex = 95;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

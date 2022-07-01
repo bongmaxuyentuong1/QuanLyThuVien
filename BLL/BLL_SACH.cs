@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using System.Text;
 using System.Threading.Tasks;
 using QuanLyThuVien.DTO;
@@ -319,12 +320,26 @@ namespace QuanLyThuVien.BLL
                      };
             return l1.ToList();
         }
-        public List<SACH_VIEW> getSachHet(int a)
+        public List<SACH_VIEW> getSachHetAdmin()
         {
             List<SACH_VIEW> data = new List<SACH_VIEW>();
+
             foreach (SACH_VIEW s in getSach())
             {
-                if (s.SLHIENTAI <= a && s.SLHIENTAI > 0 || a == 0 && s.SLHIENTAI == 0)
+                if (s.SLHIENTAI == 0)
+                {
+                    data.Add(s);
+                }
+            }
+            return data;
+        }
+        public List<SACH_VIEW> getSachHetThuthu()
+        {
+            List<SACH_VIEW> data = new List<SACH_VIEW>();
+
+            foreach (SACH_VIEW s in getSach())
+            {
+                if (s.SLTONKHO == 0)
                 {
                     data.Add(s);
                 }

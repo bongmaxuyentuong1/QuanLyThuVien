@@ -144,8 +144,8 @@ namespace QuanLyThuVien.VIEW
 
             txtHocVi.Enabled = false;
             txtMSSV.Enabled = false;
-            cbbKhoa.Enabled = false;
-            cbbLSH.Enabled = false;
+            //cbbKhoa.Enabled = false;
+            //cbbLSH.Enabled = false;
 
             rbSV.Checked = true;
         }
@@ -176,13 +176,7 @@ namespace QuanLyThuVien.VIEW
                 }
                 BLL_DOCGIA.Instance.xoaDanhSachDocGiaGiangVien(list_id_giaovien);
             }
-            else
-            {
-                CN_Thongbao f = new CN_Thongbao();
-                f.setNotice("Vui lòng chọn dòng để xóa!");
-            }
-
-            if (dataGridViewSinhvien.SelectedRows.Count > 0)
+            else if (dataGridViewSinhvien.SelectedRows.Count > 0)
             {
                 List<string> list_id_sinhvien = new List<string>();
                 foreach (DataGridViewRow dr in dataGridViewSinhvien.SelectedRows)
@@ -196,7 +190,7 @@ namespace QuanLyThuVien.VIEW
                 CN_Thongbao f = new CN_Thongbao();
                 f.setNotice("Vui lòng chọn dòng để xóa!");
             }
-            GUI();
+            ShowDGV();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

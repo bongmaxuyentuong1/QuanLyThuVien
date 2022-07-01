@@ -157,7 +157,7 @@
             // btnThemNgonNgu
             // 
             this.btnThemNgonNgu.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNgonNgu.Location = new System.Drawing.Point(357, 98);
+            this.btnThemNgonNgu.Location = new System.Drawing.Point(472, 100);
             this.btnThemNgonNgu.Name = "btnThemNgonNgu";
             this.btnThemNgonNgu.Size = new System.Drawing.Size(33, 25);
             this.btnThemNgonNgu.TabIndex = 80;
@@ -168,7 +168,7 @@
             // btnThemTheLoai
             // 
             this.btnThemTheLoai.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemTheLoai.Location = new System.Drawing.Point(357, 42);
+            this.btnThemTheLoai.Location = new System.Drawing.Point(472, 44);
             this.btnThemTheLoai.Name = "btnThemTheLoai";
             this.btnThemTheLoai.Size = new System.Drawing.Size(33, 25);
             this.btnThemTheLoai.TabIndex = 79;
@@ -182,9 +182,9 @@
             this.btnThem.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(836, 194);
+            this.btnThem.Location = new System.Drawing.Point(827, 194);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(98, 39);
+            this.btnThem.Size = new System.Drawing.Size(107, 39);
             this.btnThem.TabIndex = 78;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -308,7 +308,7 @@
             this.cbbNgonNgu.FormattingEnabled = true;
             this.cbbNgonNgu.Location = new System.Drawing.Point(217, 97);
             this.cbbNgonNgu.Name = "cbbNgonNgu";
-            this.cbbNgonNgu.Size = new System.Drawing.Size(121, 31);
+            this.cbbNgonNgu.Size = new System.Drawing.Size(240, 31);
             this.cbbNgonNgu.TabIndex = 66;
             // 
             // txtNhande
@@ -316,7 +316,7 @@
             this.txtNhande.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNhande.Location = new System.Drawing.Point(217, 147);
             this.txtNhande.Name = "txtNhande";
-            this.txtNhande.Size = new System.Drawing.Size(121, 31);
+            this.txtNhande.Size = new System.Drawing.Size(240, 31);
             this.txtNhande.TabIndex = 59;
             // 
             // label7
@@ -359,7 +359,7 @@
             this.cbbTheLoai.FormattingEnabled = true;
             this.cbbTheLoai.Location = new System.Drawing.Point(217, 41);
             this.cbbTheLoai.Name = "cbbTheLoai";
-            this.cbbTheLoai.Size = new System.Drawing.Size(121, 31);
+            this.cbbTheLoai.Size = new System.Drawing.Size(240, 31);
             this.cbbTheLoai.TabIndex = 62;
             // 
             // cbbNXB

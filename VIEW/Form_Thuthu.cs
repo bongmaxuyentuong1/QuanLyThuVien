@@ -144,7 +144,7 @@ namespace QuanLyThuVien.VIEW
 
         private void btnBCTK1_Click(object sender, EventArgs e)
         {
-            Thongke_Sachhet f = new Thongke_Sachhet(3);
+            Thongke_Sachhet f = new Thongke_Sachhet(this.manguoidung);
             openChildForm(f);
         }
         #endregion
@@ -290,7 +290,7 @@ namespace QuanLyThuVien.VIEW
 
         private void toolStripMenuItem19_Click(object sender, EventArgs e)
         {
-            Thongke_Sachhet f = new Thongke_Sachhet(3);
+            Thongke_Sachhet f = new Thongke_Sachhet(this.manguoidung);
             openChildForm(f);
         }
 

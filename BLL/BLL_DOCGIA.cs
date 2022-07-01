@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QuanLyThuVien.DTO;
 using QuanLyThuVien.Entity;
+using System.Windows.Forms;
 namespace QuanLyThuVien.BLL
 {
     internal class BLL_DOCGIA
@@ -444,13 +445,6 @@ namespace QuanLyThuVien.BLL
             List<DOCGIA> l1 = (from dg in db.DOCGIAs
                             where dg.SOSACHMUON >= 10
                             select dg).ToList();
-                            //select new DOCGIA
-                            //{
-                            //    MADOCGIA = dg.MADOCGIA,
-                            //    HOTEN = dg.HOTEN,
-                            //    DIACHI = dg.DIACHI,
-                            //    SOSACHMUON = dg.SOSACHMUON
-                            //}).ToList();
             return l1;
         }
         public int TinhNgayTre(DateTime NgayMuon)
@@ -479,9 +473,9 @@ namespace QuanLyThuVien.BLL
                      };
             List<DOCGIA_VIPHAM> data = l1.ToList();
             List<DOCGIA_VIPHAM> dataResult = new List<DOCGIA_VIPHAM>();
-            foreach (DOCGIA_VIPHAM d in data)
+            foreach (DOCGIA_VIPHAM d in data) 
             {
-                if (DateTime.Compare(d.Ngay_Tra, DateTime.Now) < 0)
+                if (DateTime.Compare(d.Ngay_Tra, DateTime.Now) < 0 && TinhNgayTre(d.Ngay_Tra) != 0)
                 {
                     d.Noi_Dung_Vi_Pham = "Qua han " + TinhNgayTre(d.Ngay_Tra).ToString() + " ngay";
                     dataResult.Add(d);

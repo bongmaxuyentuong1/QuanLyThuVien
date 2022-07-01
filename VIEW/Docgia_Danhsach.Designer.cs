@@ -125,9 +125,9 @@
             this.cbbThuocTinhSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cbbThuocTinhSV.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbThuocTinhSV.FormattingEnabled = true;
-            this.cbbThuocTinhSV.Location = new System.Drawing.Point(717, 241);
+            this.cbbThuocTinhSV.Location = new System.Drawing.Point(686, 244);
             this.cbbThuocTinhSV.Name = "cbbThuocTinhSV";
-            this.cbbThuocTinhSV.Size = new System.Drawing.Size(121, 32);
+            this.cbbThuocTinhSV.Size = new System.Drawing.Size(152, 32);
             this.cbbThuocTinhSV.TabIndex = 109;
             // 
             // button2
@@ -136,9 +136,9 @@
             this.button2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(565, 241);
+            this.button2.Location = new System.Drawing.Point(552, 241);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 36);
+            this.button2.Size = new System.Drawing.Size(121, 36);
             this.button2.TabIndex = 108;
             this.button2.Text = "Sắp xếp";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -150,9 +150,9 @@
             this.cbbThuocTinhGV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cbbThuocTinhGV.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbThuocTinhGV.FormattingEnabled = true;
-            this.cbbThuocTinhGV.Location = new System.Drawing.Point(717, 508);
+            this.cbbThuocTinhGV.Location = new System.Drawing.Point(690, 508);
             this.cbbThuocTinhGV.Name = "cbbThuocTinhGV";
-            this.cbbThuocTinhGV.Size = new System.Drawing.Size(121, 32);
+            this.cbbThuocTinhGV.Size = new System.Drawing.Size(148, 32);
             this.cbbThuocTinhGV.TabIndex = 107;
             // 
             // btn_Sua
@@ -161,7 +161,7 @@
             this.btn_Sua.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
             this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sua.Location = new System.Drawing.Point(437, 502);
+            this.btn_Sua.Location = new System.Drawing.Point(423, 502);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(101, 39);
             this.btn_Sua.TabIndex = 106;
@@ -176,7 +176,7 @@
             this.btn_Xoa.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
             this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Xoa.Location = new System.Drawing.Point(308, 502);
+            this.btn_Xoa.Location = new System.Drawing.Point(294, 502);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(103, 39);
             this.btn_Xoa.TabIndex = 105;
@@ -191,7 +191,7 @@
             this.btn_Them.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.Image")));
             this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Them.Location = new System.Drawing.Point(170, 501);
+            this.btn_Them.Location = new System.Drawing.Point(156, 501);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(118, 39);
             this.btn_Them.TabIndex = 104;
@@ -206,7 +206,7 @@
             this.btn_Toanbo.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Toanbo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Toanbo.Image")));
             this.btn_Toanbo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Toanbo.Location = new System.Drawing.Point(21, 502);
+            this.btn_Toanbo.Location = new System.Drawing.Point(7, 502);
             this.btn_Toanbo.Name = "btn_Toanbo";
             this.btn_Toanbo.Size = new System.Drawing.Size(127, 39);
             this.btn_Toanbo.TabIndex = 103;
@@ -232,9 +232,9 @@
             this.button1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(565, 504);
+            this.button1.Location = new System.Drawing.Point(551, 504);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 36);
+            this.button1.Size = new System.Drawing.Size(124, 36);
             this.button1.TabIndex = 102;
             this.button1.Text = "Sắp xếp";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

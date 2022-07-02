@@ -17,6 +17,8 @@ namespace QuanLyThuVien.VIEW
         public PM_Tim()
         {
             InitializeComponent();
+            dataGridView1.DataSource = BLL_PHIEUMUON.Instance.getAllPhieuMuon();
+            setDGVColumnsHeader();
         }
         public void setDGVColumnsHeader()
         {

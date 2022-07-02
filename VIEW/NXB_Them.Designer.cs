@@ -28,94 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXacNhan = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NXB_Them));
             this.txtTenNXBMoi = new System.Windows.Forms.TextBox();
             this.lbMaNXBMoi = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnXacNhan);
-            this.groupBox1.Controls.Add(this.txtTenNXBMoi);
-            this.groupBox1.Controls.Add(this.lbMaNXBMoi);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(311, 157);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nhà xuất bản mới";
-            // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.Location = new System.Drawing.Point(111, 128);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
-            this.btnXacNhan.TabIndex = 5;
-            this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.UseVisualStyleBackColor = true;
-            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // txtTenNXBMoi
             // 
-            this.txtTenNXBMoi.Location = new System.Drawing.Point(151, 69);
+            this.txtTenNXBMoi.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNXBMoi.Location = new System.Drawing.Point(235, 102);
             this.txtTenNXBMoi.Name = "txtTenNXBMoi";
-            this.txtTenNXBMoi.Size = new System.Drawing.Size(154, 22);
+            this.txtTenNXBMoi.Size = new System.Drawing.Size(154, 29);
             this.txtTenNXBMoi.TabIndex = 1;
             // 
             // lbMaNXBMoi
             // 
             this.lbMaNXBMoi.AutoSize = true;
-            this.lbMaNXBMoi.Location = new System.Drawing.Point(148, 18);
+            this.lbMaNXBMoi.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaNXBMoi.Location = new System.Drawing.Point(231, 50);
             this.lbMaNXBMoi.Name = "lbMaNXBMoi";
-            this.lbMaNXBMoi.Size = new System.Drawing.Size(109, 16);
+            this.lbMaNXBMoi.Size = new System.Drawing.Size(175, 23);
             this.lbMaNXBMoi.TabIndex = 3;
             this.lbMaNXBMoi.Text = "Mã ngôn ngữ mới";
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên NXB mới";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(55, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tên NXB mới";
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Mã NXB mới";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(55, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 24);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Mã NXB mới";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Constantia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label5.Location = new System.Drawing.Point(42, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(206, 28);
+            this.label5.TabIndex = 98;
+            this.label5.Text = "Nhà xuất bản mới";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.txtTenNXBMoi);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.lbMaNXBMoi);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Location = new System.Drawing.Point(15, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(445, 206);
+            this.panel1.TabIndex = 97;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThem.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(155, 146);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(117, 39);
+            this.btnThem.TabIndex = 102;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnXacNhan_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(2, 204);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(441, 2);
+            this.panel2.TabIndex = 16;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 204);
+            this.panel3.TabIndex = 17;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(443, 2);
+            this.panel4.TabIndex = 15;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(443, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(2, 206);
+            this.panel5.TabIndex = 18;
             // 
             // NXB_Them
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 181);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(472, 236);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NXB_Them";
             this.Text = "NXB_Them";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtTenNXBMoi;
         private System.Windows.Forms.Label lbMaNXBMoi;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnXacNhan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

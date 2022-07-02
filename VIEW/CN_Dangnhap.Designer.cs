@@ -232,6 +232,7 @@
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(500, 500);
             this.Name = "CN_Dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

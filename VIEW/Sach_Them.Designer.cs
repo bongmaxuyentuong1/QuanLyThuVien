@@ -146,33 +146,36 @@
             // 
             this.btnThemNXB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemNXB.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNXB.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNXB.Image")));
             this.btnThemNXB.Location = new System.Drawing.Point(940, 47);
             this.btnThemNXB.Name = "btnThemNXB";
             this.btnThemNXB.Size = new System.Drawing.Size(32, 26);
             this.btnThemNXB.TabIndex = 81;
-            this.btnThemNXB.Text = " +";
+            this.btnThemNXB.Text = " ";
             this.btnThemNXB.UseVisualStyleBackColor = true;
             this.btnThemNXB.Click += new System.EventHandler(this.btnThemNXB_Click);
             // 
             // btnThemNgonNgu
             // 
             this.btnThemNgonNgu.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNgonNgu.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNgonNgu.Image")));
             this.btnThemNgonNgu.Location = new System.Drawing.Point(472, 100);
             this.btnThemNgonNgu.Name = "btnThemNgonNgu";
             this.btnThemNgonNgu.Size = new System.Drawing.Size(33, 25);
             this.btnThemNgonNgu.TabIndex = 80;
-            this.btnThemNgonNgu.Text = " +";
+            this.btnThemNgonNgu.Text = " ";
             this.btnThemNgonNgu.UseVisualStyleBackColor = true;
             this.btnThemNgonNgu.Click += new System.EventHandler(this.btnThemNgonNgu_Click);
             // 
             // btnThemTheLoai
             // 
             this.btnThemTheLoai.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemTheLoai.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTheLoai.Image")));
             this.btnThemTheLoai.Location = new System.Drawing.Point(472, 44);
             this.btnThemTheLoai.Name = "btnThemTheLoai";
             this.btnThemTheLoai.Size = new System.Drawing.Size(33, 25);
             this.btnThemTheLoai.TabIndex = 79;
-            this.btnThemTheLoai.Text = " +";
+            this.btnThemTheLoai.Text = " ";
             this.btnThemTheLoai.UseVisualStyleBackColor = true;
             this.btnThemTheLoai.Click += new System.EventHandler(this.btnThemTheLoai_Click);
             // 

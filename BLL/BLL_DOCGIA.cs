@@ -475,7 +475,7 @@ namespace QuanLyThuVien.BLL
             List<DOCGIA_VIPHAM> dataResult = new List<DOCGIA_VIPHAM>();
             foreach (DOCGIA_VIPHAM d in data) 
             {
-                if (DateTime.Compare(d.Ngay_Tra, DateTime.Now) < 0 && TinhNgayTre(d.Ngay_Tra) != 0)
+                if (DateTime.Compare(d.Ngay_Tra.Date, DateTime.Now.Date) < 0 && TinhNgayTre(d.Ngay_Tra) != 0)
                 {
                     d.Noi_Dung_Vi_Pham = "Qua han " + TinhNgayTre(d.Ngay_Tra).ToString() + " ngay";
                     dataResult.Add(d);

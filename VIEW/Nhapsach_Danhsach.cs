@@ -29,6 +29,11 @@ namespace QuanLyThuVien.VIEW
             dataGridView1.Columns[3].HeaderText = "Mã sách";
             dataGridView1.Columns[4].HeaderText = "Số lượng";
         }
+        public void ShowDGV()
+        {
+            dataGridView1.DataSource = BLL_NHAPSACH.Instance.getAllChiTietNhapSach();
+            setDGVColumnsHeader();
+        }
         public void GUI()
         {
             dataGridView1.DataSource = BLL_NHAPSACH.Instance.getAllChiTietNhapSach();
@@ -94,11 +99,13 @@ namespace QuanLyThuVien.VIEW
             {
                 string manhapsach = dataGridView1.SelectedRows[0].Cells["MANHAPSACH"].Value.ToString();
                 Nhapsach_Sua nhapsach_Sua = new Nhapsach_Sua(this.manguoidung, manhapsach);
+                nhapsach_Sua.d = new Nhapsach_Sua.Mydel(ShowDGV);
                 nhapsach_Sua.Show();
             }
             else
             {
                 Nhapsach_Sua nhapsach_sua = new Nhapsach_Sua(this.manguoidung);
+                nhapsach_sua.d = new Nhapsach_Sua.Mydel(ShowDGV);
                 nhapsach_sua.Show();
             }
         }
@@ -106,6 +113,7 @@ namespace QuanLyThuVien.VIEW
         private void btnThem_Click(object sender, EventArgs e)
         {
             Nhapsach_Them nhapsach_Them = new Nhapsach_Them(this.manguoidung);
+            nhapsach_Them.d = new Nhapsach_Them.Mydel(ShowDGV);
             nhapsach_Them.Show();
         }
 

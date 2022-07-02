@@ -17,6 +17,12 @@ namespace QuanLyThuVien.VIEW
         public Nhapsach_Tim()
         {
             InitializeComponent();
+            ShowDGV();
+        }
+        public void ShowDGV()
+        {
+            dataGridView1.DataSource = BLL_NHAPSACH.Instance.getAllChiTietNhapSach();
+            setDGVColumnsHeader();
         }
         public void setDGVColumnsHeader()
         {

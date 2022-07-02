@@ -342,15 +342,15 @@ namespace QuanLyThuVien.VIEW
             openChildForm(f);
         }
 
-        private void toolStripMenuItem5_Click(object sender, EventArgs e)
-        {
-            Sach_Danhsach f = new Sach_Danhsach(this.manguoidung);
-            openChildForm(f);
-        }
-
         private void toolStripMenuItem7_Click_1(object sender, EventArgs e)
         {
             Sach_Tim f = new Sach_Tim();
+            openChildForm(f);
+        }
+
+        private void thôngTinNhậpTàiLiệuToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Sach_Danhsach f = new Sach_Danhsach(this.manguoidung);
             openChildForm(f);
         }
     }

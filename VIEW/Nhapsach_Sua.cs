@@ -18,6 +18,8 @@ namespace QuanLyThuVien.VIEW
         private string manguoidung { get; set; }
         private string manhapsach { get; set; }
         private NHAPSACH nhapsach { get; set; }
+        public delegate void Mydel();
+        public Mydel d = null;
         public Nhapsach_Sua(string manguoidung)
         {
             this.manguoidung = manguoidung;
@@ -124,6 +126,10 @@ namespace QuanLyThuVien.VIEW
             {
                 List<NHAPSACH_VIEW_SOLUONG> list = (List<NHAPSACH_VIEW_SOLUONG>)dataGridView2.DataSource;
                 BLL_NHAPSACH.Instance.suaChiTietNhapSach(this.manhapsach, list);
+                if (d != null)
+                {
+                    d();
+                }
                 unableGroup2();
             }
         }

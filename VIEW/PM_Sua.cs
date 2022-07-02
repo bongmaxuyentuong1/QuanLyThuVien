@@ -18,7 +18,7 @@ namespace QuanLyThuVien.VIEW
         private string maphieumuon;
         private PHIEUMUON phieumuon;
         public delegate void Mydel();
-        public Mydel d;
+        public Mydel d = null;
         public PM_Sua(string manguoidung)
         {
             InitializeComponent();
@@ -114,7 +114,6 @@ namespace QuanLyThuVien.VIEW
             bool res2 = BLL_PHIEUMUON.Instance.kiemTraNgayMuonNgayTra(this.phieumuon.NGAYMUON, dateTimePicker1.Value);
             if (!res1)
             {
-                //MessageBox.Show("Độc giả không đáp ứng yêu cầu mượn sách!\nTạo mới hoặc trả sách trước khi mượn thêm");
                 CN_Thongbao f = new CN_Thongbao();
                 f.setNotice("Độc giả không đáp ứng yêu cầu mượn sách!\nTạo mới hoặc trả sách trước khi mượn thêm!");
             }
@@ -145,7 +144,7 @@ namespace QuanLyThuVien.VIEW
                 List<PM_VIEW_SOLUONG> list = (List<PM_VIEW_SOLUONG>)dataGridView2.DataSource;
                 BLL_PHIEUMUON.Instance.suaPhieuMuon(this.maphieumuon, madocgia, phieumuon.NGAYMUON, ngaytra, phieumuon.MANGUOIDUNG, list);
                 GUI();
-                if(manguoidung != null || d != null){
+                if(d != null){
                     d();
                 }
                 unableGroup3();

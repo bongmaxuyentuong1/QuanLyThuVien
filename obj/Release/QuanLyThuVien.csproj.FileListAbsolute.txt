@@ -22,7 +22,6 @@ D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Docgia.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Docgia_Danhsach.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Docgia_Sua.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Docgia_Them.resources
-D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.Docgia_Tim.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Form_Admin.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Form_Thuthu.resources
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Nhapsach_Danhsach.resources
@@ -52,3 +51,7 @@ D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.csproj.CoreCompileInputs
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.csproj.CopyComplete
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.exe
 D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.pdb
+D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Docgia_Tim.resources
+D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Ngonngu_Them.resources
+D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.NXB_Them.resources
+D:\PBL3\version\QuanLyThuVien\obj\Release\QuanLyThuVien.VIEW.Theloai_Them.resources

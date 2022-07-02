@@ -44,6 +44,7 @@ namespace QuanLyThuVien.VIEW
             //
             _reload();
             GUI();
+            this.Close();
         }
     }
 }

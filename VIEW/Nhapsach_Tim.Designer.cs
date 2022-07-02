@@ -37,7 +37,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,7 +133,6 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.dataGridView2);
             this.panel14.Controls.Add(this.dataGridView1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(0, 308);
@@ -143,32 +140,19 @@
             this.panel14.Size = new System.Drawing.Size(879, 344);
             this.panel14.TabIndex = 70;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(2, 29);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(877, 278);
-            this.dataGridView2.TabIndex = 1;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 29);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 31);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(795, 278);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.Size = new System.Drawing.Size(877, 278);
+            this.dataGridView1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -191,7 +175,6 @@
             this.label14.Size = new System.Drawing.Size(161, 24);
             this.label14.TabIndex = 8;
             this.label14.Text = "Kết quả tìm kiếm";
-            this.label14.Visible = false;
             // 
             // panel2
             // 
@@ -290,7 +273,6 @@
             this.Text = "Tìm phiếu nhập";
             this.panel1.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -311,7 +293,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label14;

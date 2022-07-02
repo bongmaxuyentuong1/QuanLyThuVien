@@ -14,6 +14,8 @@ namespace QuanLyThuVien.VIEW
     public partial class Nhapsach_Them : Form
     {
         private string manguoidung { get; set; }
+        public delegate void Mydel();
+        public Mydel d = null;
         public Nhapsach_Them(string manguoidung)
         {
             this.manguoidung = manguoidung;
@@ -100,6 +102,10 @@ namespace QuanLyThuVien.VIEW
                 BLL_NHAPSACH.Instance.themNhapSach(manhapsach, ngaynhap, manguoidung, list);
                 CN_Thongbao f = new CN_Thongbao();
                 f.setNotice("Thêm thông tin nhập sách thành công!");
+                if (d != null)
+                {
+                    d();
+                }
                 dataGridView1.DataSource = null;
                 txtMasach.Text = "";
                 txtSoluong.Text = "";

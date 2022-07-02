@@ -162,23 +162,7 @@ namespace QuanLyThuVien.BLL
         public string themPhieuMuon(string maphieumuon, string madocgia, DateTime ngaymuon, DateTime ngaytra,
             string manguoidung, List<PM_VIEW_SOLUONG> list)
         {
-            //string res = "Them thanh cong!";
-            //QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
-            //// Them vao phieu muon
-            //PHIEUMUON phieumuon = new PHIEUMUON()
-            //{
-            //    MAPHIEU = maphieumuon,
-            //    MADOCGIA = madocgia,
-            //    MANGUOIDUNG = manguoidung,
-            //    NGAYMUON = ngaymuon,
-            //    NGAYTRA = ngaytra,
-            //};
-            //entities.PHIEUMUONs.Add(phieumuon);
-            //entities.SaveChanges();
-            //themChiTietPhieuMuon(maphieumuon, madocgia, ngaymuon, ngaytra, manguoidung, list);
-            //entities.SaveChanges();
-            //return res;
-            string res = "Them thanh cong!";
+            string res = "Thêm thành công!";
             int slInDGV = 0;
             foreach (PM_VIEW_SOLUONG v in list)
             {
@@ -186,7 +170,7 @@ namespace QuanLyThuVien.BLL
             }
             if (slInDGV + BLL_DOCGIA.Instance.timDocGiaTheoMaDocGia(madocgia).SOSACHMUON > 20)
             {
-                return "Them that bai! Kiem tra so luong!";
+                return "Thêm thất bại! Kiểm tra số lượng!";
             }
             QuanLyThuVienEntities entities = new QuanLyThuVienEntities();
             // Them vao phieu muon

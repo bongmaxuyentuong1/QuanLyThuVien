@@ -1009,13 +1009,13 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(69, 24);
             this.toolStripMenuItem5.Text = "Tài liệu";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // thôngTinNhậpTàiLiệuToolStripMenuItem
             // 
             this.thôngTinNhậpTàiLiệuToolStripMenuItem.Name = "thôngTinNhậpTàiLiệuToolStripMenuItem";
             this.thôngTinNhậpTàiLiệuToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.thôngTinNhậpTàiLiệuToolStripMenuItem.Text = "Thông tin nhập tài liệu";
+            this.thôngTinNhậpTàiLiệuToolStripMenuItem.Click += new System.EventHandler(this.thôngTinNhậpTàiLiệuToolStripMenuItem_Click_1);
             // 
             // toolStripMenuItem6
             // 
